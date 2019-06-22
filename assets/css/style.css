@@ -1,0 +1,9 @@
+/* Used as an example only to position the footer at the end of the page.*/
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+main {
+  flex: 1 0 auto;
+}
