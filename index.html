@@ -16,7 +16,24 @@
       href="./assets/css/materialize.css"
       media="screen,projection"
     />
-    <!-- Custom css file path -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+    <style>
+
+      #mapid { height: 400px; }
+
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
@@ -63,6 +80,7 @@
         </div>
       </div>
     </footer>
+    <div id="mapId"></div>
     <!-- Mobile Navbar -->
     <ul class="sidenav" id="mobile">
       <li><a href="#">Home</a></li>
@@ -75,6 +93,9 @@
     <script src="./assets/scripts/jquery-3.4.1.min.js"></script>
     <!-- Path of the materialize.min.js file -->
     <script src="./assets/scripts/materialize.min.js"></script>
+     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
     <script src="./assets/scripts/index.js"></script>
     <script>
       // this initializes the sidenav function
