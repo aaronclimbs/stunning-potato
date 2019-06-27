@@ -16,24 +16,7 @@
       href="./assets/css/materialize.css"
       media="screen,projection"
     />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
-   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/>
-    <style>
-
-      #mapid { height: 400px; }
-
-      body {
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-      }
-    </style>
+    <!-- Custom css file path -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <style>
         body {
@@ -42,7 +25,6 @@
         </style>
   </head>
   <body>
-
     <header>
       <nav>
         <div class="nav-wrapper">
@@ -52,32 +34,31 @@
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="search.html">Search</a></li>
-              <li><a href="featured.html">Featured</a></li>
-              <li><a href="#">Login</a></li>
-              <li><a href="#">Log out</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="featured.html">Featured</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Log out</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
-
-
-
     <main>
 
+
+
+
+
+
       <!-- main content goes here -->
-      <div class="carousel">
-          <a class="carousel-item" href="#one!"><img src="./assets/images/image1.png"></a>
-          <a class="carousel-item" href="#two!"><img src="./assets/images/image2.png"></a>
-          <a class="carousel-item" href="#three!"><img src="./assets/images/image3.png"></a>
-          <a class="carousel-item" href="#four!"><img src="./assets/images/image4.png"></a>
-          <a class="carousel-item" href="#five!"><img src="./assets/images/image5.png"></a>
-          <a class="carousel-item" href="#five!"><img src="./assets/images/image6.png"></a>
-        </div>
-        
+
+
+
+
+
+
     </main>
     <footer class="page-footer">
       <div class="footer-copyright">
@@ -88,7 +69,6 @@
         </div>
       </div>
     </footer>
-    <div id="mapId"></div>
     <!-- Mobile Navbar -->
     <ul class="sidenav" id="mobile">
       <li><a href="#">Home</a></li>
@@ -101,31 +81,8 @@
     <script src="./assets/scripts/jquery-3.4.1.min.js"></script>
     <!-- Path of the materialize.min.js file -->
     <script src="./assets/scripts/materialize.min.js"></script>
-     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script>
     <script src="./assets/scripts/index.js"></script>
     <script>
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, options);
-  });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.carousel').carousel();
-  });
-
-
-
-
-
-
-
-
-
       // this initializes the sidenav function
       $("document").ready(function() {
         $(".sidenav").sidenav();

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Syp by Stunning Potato</title>
+    <!-- Material Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Path of the materialize.min.css file -->
+    <link
+      rel="stylesheet"
+      href="./assets/css/materialize.css"
+      media="screen,projection"
+    />
+    <!-- Custom css file path -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <div class="container">
+            <a href="#" class="brand-logo">SYP by Stunning Potato</a>
+            <a href="#" data-target="mobile" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="featured.html">Featured</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Log out</a></li>
+            </ul>
+            <body>
+            
+            </body>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <main>
+      <!-- main content goes here -->
+      <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="#!">one</a></li>
+        <li><a href="#!">two</a></li>
+        <li class="divider" tabindex="-1"></li>
+        <li><a href="#!">three</a></li>
+        <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+      </ul>
+    </main>
+    
+    <footer class="page-footer">
+      <div class="footer-copyright">
+        <div class="container">
+          <p>
+            © 2019 Copyright Stunning Potatoes
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Mobile Navbar -->
+    <ul class="sidenav" id="mobile">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Search</a></li>
+      <li><a href="#">New Wines</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Log out</a></li>
+    </ul>
+    <!-- The jQuery file path -->
+    <script src="./assets/scripts/jquery-3.4.1.min.js"></script>
+    <!-- Path of the materialize.min.js file -->
+    <script src="./assets/scripts/materialize.min.js"></script>
+    <script src="./assets/scripts/index.js"></script>
+    <script>
+      // this initializes the dropdown function
+      document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $('.dropdown-trigger').dropdown();
+        
+    </script>
+  </body>
+</html>
