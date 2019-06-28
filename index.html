@@ -73,14 +73,15 @@
 
     <!-- Mobile Navbar -->
     <ul class="sidenav" id="mobile">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./featured">Trending</a></li>
-      <li><a href="#aboutUsModal">About Us</a></li>
-      <li><a href="#logInModal">Log in</a></li>
-      <li><a href="#logOutModal">Log out</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#aboutUsModal">About</a></li>
+      <li><a href="featured.html">Featured</a></li>
+      <li class="hide-on-load"><a href="#logInModal">Login</a></li>
+      <li class="hide-on-load"><a href="#signUpModal">Sign up</a></li>
+      <li class="hide-on-load"><a href="#">Sign out</a></li>
     </ul>
         <!-- Log in Modal -->
-    <div id="logInModal" class="modal">
+     <div id="logInModal" class="modal">
       <div class="modal-content">
         <form class="col s12" id="logInForm">
           <div class="input-field col s12">
@@ -136,9 +137,46 @@
     </div>
     <!-- About Us Modal -->
     <div id="aboutUsModal" class="modal">
-
-      <!-- ABOUT US CONTENT HERE -->
-
+      <div class="row">
+        <div class="card small col s4 offset-s1">
+          <div class="card-image">
+            <img src="./assets/images/Ashim.png" alt=""/>
+            <span class="card-title">Ashim Sharma</span>
+          </div>
+          <div class="card-content">
+            <p>Project Info</p>
+          </div>
+        </div>
+        <div class="card small col s4 offset-s2">
+          <div class="card-image">
+            <img src="./assets/images/tanika.jpeg" alt=""/>
+            <span class="card-title">Tanika Williams</span>
+          </div>
+          <div class="card-content">
+            <p>Project Info</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card small col s4 offset-s1">
+          <div class="card-image">
+            <img src="./assets/images/nico.jpeg" alt=""/>
+            <span class="card-title">Nico Alcalde</span>
+          </div>
+          <div class="card-content">
+            <p>Project Info</p>
+          </div>
+        </div>
+        <div class="card small col s4 offset-s2">
+          <div class="card-image">
+            <img src="./assets/images/aaron.jpeg" alt=""/>
+            <span class="card-title">Aaron Keisler</span>
+          </div>
+          <div class="card-content">
+            <p>Javascript, ListenNotes API, Firebase Auth, Firebase Firestore</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- The jQuery file path -->
     <script src="./assets/scripts/jquery-3.4.1.min.js"></script>
@@ -146,30 +184,10 @@
     <script src="./assets/scripts/materialize.min.js"></script>
     <script src="./assets/scripts/index.js"></script>
     <script>
-
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems);
+  // this initializes the sidenav function
+  $("document").ready(function() {
+    $(".sidenav").sidenav();
   });
-
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.carousel').carousel();
-  });
-
-
-
-
-
-
-
-
-
-      // this initializes the sidenav function
-      $("document").ready(function() {
-        $(".sidenav").sidenav();
-      });
     </script>
   </body>
 </html>
