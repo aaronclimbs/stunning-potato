@@ -1,4 +1,5 @@
 // Aaron
+<<<<<<< HEAD
 var mymap = L.map("mapId").setView([39, -98], 4);
 
 L.tileLayer(
@@ -55,6 +56,50 @@ function clearOutByClass(target) {
     targetDiv.removeChild(targetDiv.firstChild);
   }
 }
+=======
+
+
+// Initialize modals
+document.addEventListener("DOMContentLoaded", () => {
+  var elems = document.querySelectorAll(".modal");
+  M.Modal.init(elems);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> master
 
 
 
