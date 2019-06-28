@@ -19,56 +19,171 @@
     <!-- Custom css file path -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <style>
-        body {
-          background-image: url("./assets/images/Podcast-background.jpg");
-        }
-        </style>
+      body {
+        background-image: url("./assets/images/Podcast-background.jpg");
+      }
+    </style>
   </head>
   <body>
     <header>
       <nav>
-        <div class="nav-wrapper">
           <div class="container">
-            <a href="#" class="brand-logo">SYP by Stunning Potato</a>
+            <a href="index.html" class="brand-logo">SYP</a>
             <a href="#" data-target="mobile" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="search.html">Search</a></li>
-                <li><a href="featured.html">Featured</a></li>
-                <li><a href="#">Login</a></li>
-                <li><a href="#">Log out</a></li>
+              <li><a class="btn waves-effect" href="index.html">Home</a></li>
+              <li><a class="modal-trigger waves-effect btn" href="#aboutUsModal">About</a></li>
+              <li><a class="btn waves-effect" href="featured.html">Featured</a></li>
+              <li class="hide-on-load"><a class="modal-trigger waves-effect btn" href="#logInModal">Login</a></li>
+              <li class="hide-on-load"><a class="modal-trigger waves-effect btn" href="#signUpModal">Sign up</a></li>
+              <li class="hide-on-load"><a class="waves-effect btn" href="#">Sign out</a></li>
             </ul>
           </div>
-        </div>
       </nav>
     </header>
     <main>
-
-
-
-
-
-
-      <!-- main content goes here -->
-
-
-
-
-
-
+      <div class="container">
+         <!-- main content goes here -->
+      <a class='dropdown-trigger btn waves-effect waves-block' href='#' data-target='dropdown1'>Curated Podcast Lists</a>
+      <!-- Dropdown Structure -->
+      <ul id='dropdown1' class='dropdown-content'>
+      </ul>
     </main>
+    <div class="section">
+      <h3 id="title"></h3>
+    </div>
+    <div id="payload"></div>
+        <!-- main content goes here -->
+      </div>
+      </main>
     <footer class="page-footer">
       <div class="footer-copyright">
         <div class="container">
-          <p>
-            © 2019 Copyright Stunning Potatoes
-          </p>
+          <div class="row">
+            <div class="col s6">
+              <p>
+                © 2019 Copyright Stunning Potatoes
+              </p>
+            </div>
+            <div class="col s6">
+              <img class="responsive-img" src="./assets/images/api-transparent background for non-white background.png" alt="">
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+        <!-- HIDDEN ON LOAD -->
+
+
+
+    <!-- Mobile Navbar -->
+    <ul class="sidenav" id="mobile">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./featured">Trending</a></li>
+      <li><a href="#aboutUsModal">About Us</a></li>
+      <li><a href="#logInModal">Log in</a></li>
+      <li><a href="#signUpModal">Sign Up</a></li>
+    </ul>
+        <!-- Log in Modal -->
+    <div id="logInModal" class="modal">
+      <div class="modal-content">
+        <form class="col s12" id="logInForm">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="login-email" type="email" class="validate" required />
+            <label for="login-email">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input id="login-password" type="password" class="validate" required />
+            <label for="login-password">Password</label>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn waves-effect waves-light" type="submit" name="action">
+            Log in
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Sign Up Modal -->
+    <div id="signUpModal" class="modal">
+      <div class="modal-content">
+        <form class="col s12" id="signUpForm">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">person</i>
+            <input id="signup-name" type="text" class="validate" pattern="\w+" />
+            <label for="signup-name">Name</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">email</i>
+            <input id="signup-email" type="email" class="validate" required />
+            <label for="signup-email">Email</label>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">lock</i>
+            <input id="signup-password" type="password" class="validate" required />
+            <label for="signup-password">Password</label>
+          </div>
+           <div class="input-field col s12">
+          <textarea id="signup-bio" class="materialize-textarea"></textarea>
+          <label for="signup-bio">Favorite Podcast</label>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn waves-effect waves-light" type="submit" name="action">
+            Sign up
+            <i class="material-icons right">send</i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- About Us Modal -->
+    <div id="aboutUsModal" class="modal">
+      <div class="row">
+        <div class="card small col s4 offset-s1">
+          <div class="card-image">
+            <img src="./assets/images/Ashim.png" alt=""/>
+            <span class="card-title">Ashim Sharma</span>
+          </div>
+          <div class="card-content">
+            <p>Project Info</p>
+          </div>
+        </div>
+        <div class="card small col s4 offset-s2">
+          <div class="card-image">
+            <img src="./assets/images/tanika.jpeg" alt=""/>
+            <span class="card-title">Tanika Williams</span>
+          </div>
+          <div class="card-content">
+            <p>Project Info</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card small col s4 offset-s1">
+          <div class="card-image">
+            <img src="./assets/images/nico.jpeg" alt=""/>
+            <span class="card-title">Nico Alcalde</span>
+          </div>
+          <div class="card-content">
+            <p>Project Info</p>
+          </div>
+        </div>
+        <div class="card small col s4 offset-s2">
+          <div class="card-image">
+            <img src="./assets/images/aaron.jpeg" alt=""/>
+            <span class="card-title">Aaron Keisler</span>
+          </div>
+          <div class="card-content">
+            <p>Javascript, ListenNotes API, Firebase Auth, Firebase Firestore</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Mobile Navbar -->
     <ul class="sidenav" id="mobile">
       <li><a href="#">Home</a></li>
@@ -81,7 +196,7 @@
     <script src="./assets/scripts/jquery-3.4.1.min.js"></script>
     <!-- Path of the materialize.min.js file -->
     <script src="./assets/scripts/materialize.min.js"></script>
-    <script src="./assets/scripts/index.js"></script>
+    <script src="./assets/scripts/featured.js"></script>
     <script>
       // this initializes the sidenav function
       $("document").ready(function() {
