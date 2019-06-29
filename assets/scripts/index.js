@@ -58,10 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 var search = "";
 var LISTEN_API_KEY = "b2b9201c69ef4a26a47ebc014f1a1ebc";
-document.querySelector("#formField").addEventListener('submit', function(e) {
+document.querySelector("#searchBox").addEventListener('submit', function(e) {
   e.preventDefault();
   // grab search term
   search = e.target.searchTerm.value;
+  $(".carousel").hide();
   fetch(`https://listen-api.listennotes.com/api/v2/search?q=${search}&type=podcast`, {
     headers: { "X-ListenAPI-Key": LISTEN_API_KEY }
   })
@@ -70,6 +71,7 @@ document.querySelector("#formField").addEventListener('submit', function(e) {
     var results = data.results;
     console.log(data);
     var card = "";
+    document.querySelector(".collapsible").classList.remove('hide-on-load');
     results.forEach(pod => {
       var id = pod.id;
       var title = pod.title_original;
@@ -82,7 +84,7 @@ document.querySelector("#formField").addEventListener('submit', function(e) {
     card += `<div class="col s6 m3 animated fadeIn">
       <div class="card hoverable">
         <div class="card-image">
-          <img src=${img}>
+          <img src=${img} class="pod-image">
           <a class="btn-floating halfway-fab waves-effect waves-light red" href=${link} target="_blank"><i class="material-icons">open_in_new</i></a>
         </div>
         <div class="card-content">
@@ -104,7 +106,7 @@ document.querySelector("#formField").addEventListener('submit', function(e) {
 
 var search = "";
 var GOOGLE_API_KEY = "AIzaSyC3hV3qgbAa2rFepp5y-0U0JAGIQ7_nohw";
-document.querySelector("#formField").addEventListener("submit", function(e) {
+document.querySelector("#searchBox").addEventListener("submit", function(e) {
   e.preventDefault();
   // grab search term
   search = e.target.searchTerm.value;
