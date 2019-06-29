@@ -21,3 +21,14 @@ main {
 .hide-on-load {
   display: none;
 }
+
+.book-image {
+  height: 234px;
+  width: 234px;
+  object-fit: cover;
+}
+
+.pod-image {
+  height: 234px;
+  object-fit: cover;
+}
