@@ -1,9 +1,23 @@
-/* Used as an example only to position the footer at the end of the page.*/
 body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
+
 main {
   flex: 1 0 auto;
+}
+
+.modal {
+  width: 60%;
+  max-height: 100%;
+  overflow-y: hidden;
+}
+
+.dropdown-content {
+  width: 40%;
+}
+
+.hide-on-load {
+  display: none;
 }
