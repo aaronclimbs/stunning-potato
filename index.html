@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syp by Stunning Potato</title>
+    
+    <!--START TW ADDED CDN for Javascript-->
+    <script>"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"</script>
+    <!--END TW ADDED CDN for Javascript-->
+
     <!-- Material Icon CDN -->
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -17,12 +22,8 @@
       media="screen,projection"
     />
     <!-- Custom css file path -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-    <style>
-        body {
-          background-image: url("./assets/images/Podcast-background.jpg");
-        }
-        </style>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
   </head>
   <body>
 
@@ -43,10 +44,60 @@
             </ul>
           </div>
       </nav>
+      <nav>
+        <div class="nav-wrapper">
+          <form id="searchBox">
+            <div class="input-field">
+              <input id="searchTerm" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+          </form>
+        </div>
+      </nav>
     </header>
     <main>
 
       <!-- main content goes here -->
+
+ <!--START TW ADDED CAROUSEL-->
+
+      <div class="carousel carousel-slider center">
+        <div class="carousel-fixed-item center">
+        <!--do we need? <a class="btn waves-effect white grey-text darken-text-2">button</a>--> 
+        </div>
+        <div class="carousel-item cyan darken-4 white-text" href="#one!">
+          <div class="container">
+            <div class="row">
+              <div class="col s7 push-s5"><img src="./assets/images/image5.png"></div>
+              <div class="col s5 pull-s7"><p><h3>SYP enables custom podcast searches with complimentary topic-based book suggestions</h3></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item purple darken-4 white-text" href="#two!">
+        <div class="container">  
+          <div class="row">
+            <div class="col s7 push-s5"><img src="./assets/images/image2.png"></div>
+              <div class="col s5 pull-s7"><p style="text-align: left"></p><h3>S.Y.P. enables custom podcast searches with complimentary topic-based book suggestions</h3></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item grey darken-1 white-text" href="#three!">
+          <div class="container">  
+            <div class="row">
+              <div class="col s7 push-s5"><img src="./assets/images/image3.png"></div>
+                <div class="col s5 pull-s7"><p style="text-align: left"></p><h3>S.Y.P. enables custom podcast searches with complimentary topic-based book suggestions</h3></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>        
+
+<!--END TW ADDED CAROUSEL-->
 
     </main>
    <footer class="page-footer">
@@ -187,6 +238,10 @@
   // this initializes the sidenav function
   $("document").ready(function() {
     $(".sidenav").sidenav();
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+    });
   });
     </script>
   </body>
