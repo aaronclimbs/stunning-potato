@@ -22,8 +22,10 @@
       media="screen,projection"
     />
     <!-- Custom css file path -->
-    <link rel="stylesheet" href="./assets/css/style.css">
 
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  
   </head>
   <body>
 
@@ -59,6 +61,7 @@
     <main>
 
       <!-- main content goes here -->
+
 
  <!--START TW ADDED CAROUSEL-->
 
@@ -98,6 +101,19 @@
       </div>        
 
 <!--END TW ADDED CAROUSEL-->
+
+
+        
+    
+        <h2 id="podcastHeader">
+        </h2>
+        <div class="row" id="podcasts">
+          </div>
+
+          <h2 id="bookHeader">
+          </h2>
+          <div class="row" id="books">
+
 
     </main>
    <footer class="page-footer">
@@ -242,6 +258,7 @@
     fullWidth: true,
     indicators: true
     });
+    $(".collapsible").collapsible();
   });
     </script>
   </body>
