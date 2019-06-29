@@ -22,6 +22,22 @@
       body {
         background-image: url("./assets/images/Podcast-background.jpg");
       }
+      #myDIV {
+  width: 100%;
+  height: 130px;
+  background: transparent;
+  -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+  animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  50% {background-color:black;}
+}
+
+@keyframes mymove {
+  50% {background-color:black;}
+}
     </style>
   </head>
   <body>
@@ -58,6 +74,10 @@
         <!-- main content goes here -->
       </div>
       </main>
+      <div id="myDIV">
+        <h1 style="text-align: center;color:lightskyblue;font-family: 'Times New Roman', Times, serif;">Select Your Podcast</h1>
+         
+       </div>
     <footer class="page-footer">
       <div class="footer-copyright">
         <div class="container">
