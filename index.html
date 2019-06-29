@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Syp by Stunning Potato</title>
-    
+
     <!--START TW ADDED CDN for Javascript-->
     <script>"https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.js"</script>
     <!--END TW ADDED CDN for Javascript-->
@@ -25,7 +25,7 @@
 
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  
+
   </head>
   <body>
 
@@ -67,7 +67,7 @@
 
       <div class="carousel carousel-slider center">
         <div class="carousel-fixed-item center">
-        <!--do we need? <a class="btn waves-effect white grey-text darken-text-2">button</a>--> 
+        <!--do we need? <a class="btn waves-effect white grey-text darken-text-2">button</a>-->
         </div>
         <div class="carousel-item cyan darken-4 white-text" href="#one!">
           <div class="container">
@@ -80,7 +80,7 @@
         </div>
 
         <div class="carousel-item purple darken-4 white-text" href="#two!">
-        <div class="container">  
+        <div class="container">
           <div class="row">
             <div class="col s7 push-s5"><img src="./assets/images/image2.png"></div>
               <div class="col s5 pull-s7"><p style="text-align: left"></p><h3>S.Y.P. enables custom podcast searches with complimentary topic-based book suggestions</h3></p>
@@ -90,7 +90,7 @@
         </div>
 
         <div class="carousel-item grey darken-1 white-text" href="#three!">
-          <div class="container">  
+          <div class="container">
             <div class="row">
               <div class="col s7 push-s5"><img src="./assets/images/image3.png"></div>
                 <div class="col s5 pull-s7"><p style="text-align: left"></p><h3>S.Y.P. enables custom podcast searches with complimentary topic-based book suggestions</h3></p>
@@ -98,22 +98,26 @@
             </div>
           </div>
         </div>
-      </div>        
+      </div>
 
 <!--END TW ADDED CAROUSEL-->
 
-
-        
-    
         <h2 id="podcastHeader">
         </h2>
         <div class="row" id="podcasts">
           </div>
 
-          <h2 id="bookHeader">
-          </h2>
-          <div class="row" id="books">
 
+          <ul class="collapsible hide-on-load">
+              <li>
+                <div class="collapsible-header">
+                  <h2 id="bookHeader"></h2>
+                </div>
+                <div class="collapsible-body">
+                  <div class="row" id="books"></div>
+              </div>
+              </li>
+          </ul>
 
     </main>
    <footer class="page-footer">
@@ -249,6 +253,9 @@
     <script src="./assets/scripts/jquery-3.4.1.min.js"></script>
     <!-- Path of the materialize.min.js file -->
     <script src="./assets/scripts/materialize.min.js"></script>
+     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
     <script src="./assets/scripts/index.js"></script>
     <script>
   // this initializes the sidenav function
