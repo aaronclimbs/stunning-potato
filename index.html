@@ -27,18 +27,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   </head>
   <body>
-
     <header>
       <nav>
           <div class="container">
-            <a href="index.html" class="brand-logo">SYP</a>
+              <a href="index.html" class="brand-logo">SYP</a>
             <a href="#" data-target="mobile" class="sidenav-trigger">
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
               <li><a class="btn waves-effect" href="index.html">Home</a></li>
-              <li><a class="modal-trigger waves-effect btn" href="#aboutUsModal">About</a></li>
               <li><a class="btn waves-effect" href="featured.html">Featured</a></li>
+              <li><a class="modal-trigger waves-effect btn" href="#aboutUsModal">About</a></li>
               <li class="hide-on-load"><a class="modal-trigger waves-effect btn" href="#logInModal">Login</a></li>
               <li class="hide-on-load"><a class="modal-trigger waves-effect btn" href="#signUpModal">Sign up</a></li>
               <li class="hide-on-load"><a class="waves-effect btn" href="#">Sign out</a></li>
@@ -72,7 +71,7 @@
           <div class="container">
             <div class="row">
               <div class="col s7 push-s5"><img src="./assets/images/image5.png"></div>
-              <div class="col s5 pull-s7"><p><h3>SYP enables custom podcast searches with complimentary topic-based book suggestions</h3></p>
+              <div class="col s5 pull-s7"><h3 style="text-align: left">SYP enables custom podcast searches with complimentary topic-based book suggestions</h3>
               </div>
             </div>
           </div>
@@ -82,8 +81,8 @@
         <div class="container">
           <div class="row">
             <div class="col s7 push-s5"><img src="./assets/images/image2.png"></div>
-              <div class="col s5 pull-s7"><p style="text-align: left"></p><h3>S.Y.P. enables custom podcast searches with complimentary topic-based book suggestions</h3></p>
-              </div>
+            <div class="col s5 pull-s7"> <h3 style="text-align: left">With S.Y.P, users can refine podcast searches with a single term that returns relevant listings with the criteria that matters</h3>
+            </div>
             </div>
           </div>
         </div>
@@ -92,7 +91,7 @@
           <div class="container">
             <div class="row">
               <div class="col s7 push-s5"><img src="./assets/images/image3.png"></div>
-                <div class="col s5 pull-s7"><p style="text-align: left"></p><h3>S.Y.P. enables custom podcast searches with complimentary topic-based book suggestions</h3></p>
+                <div class="col s5 pull-s7"><h3 style="text-align: left"> SYP searches generate topic based book listings triggered by the users podcast results.</h3>
               </div>
             </div>
           </div>
@@ -144,8 +143,8 @@
     <!-- Mobile Navbar -->
     <ul class="sidenav" id="mobile">
       <li><a href="index.html">Home</a></li>
-      <li><a href="#aboutUsModal">About</a></li>
       <li><a href="featured.html">Featured</a></li>
+      <li><a href="#aboutUsModal">About</a></li>
       <li class="hide-on-load"><a href="#logInModal">Login</a></li>
       <li class="hide-on-load"><a href="#signUpModal">Sign up</a></li>
       <li class="hide-on-load"><a href="#">Sign out</a></li>
@@ -211,19 +210,17 @@
         <div class="card small col s4 offset-s1">
           <div class="card-image">
             <img src="./assets/images/Ashim.png" alt=""/>
-            <span class="card-title">Ashim Sharma</span>
           </div>
           <div class="card-content">
-            <p>Project Info</p>
+            <p>Ashim Sharma</p>
           </div>
         </div>
         <div class="card small col s4 offset-s2">
           <div class="card-image">
             <img src="./assets/images/tanika.jpeg" alt=""/>
-            <span class="card-title">Tanika Williams</span>
           </div>
           <div class="card-content">
-            <p>Project Info</p>
+            <p>Tanika Williams</p>
           </div>
         </div>
       </div>
@@ -231,19 +228,18 @@
         <div class="card small col s4 offset-s1">
           <div class="card-image">
             <img src="./assets/images/nico.jpeg" alt=""/>
-            <span class="card-title">Nico Alcalde</span>
+
           </div>
           <div class="card-content">
-            <p>Project Info</p>
+            <p>Nico Alcalde</p>
           </div>
         </div>
         <div class="card small col s4 offset-s2">
           <div class="card-image">
             <img src="./assets/images/aaron.jpeg" alt=""/>
-            <span class="card-title">Aaron Keisler</span>
           </div>
           <div class="card-content">
-            <p>Javascript, ListenNotes API, Firebase Auth, Firebase Firestore</p>
+            <p>Aaron Keisler</p>
           </div>
         </div>
       </div>
@@ -252,12 +248,9 @@
     <script src="./assets/scripts/jquery-3.4.1.min.js"></script>
     <!-- Path of the materialize.min.js file -->
     <script src="./assets/scripts/materialize.min.js"></script>
-     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script>
     <script src="./assets/scripts/index.js"></script>
     <script>
-  // this initializes the sidenav function
+  // this initializes the sidenav, carousel, and collapsible functions
   $("document").ready(function() {
     $(".sidenav").sidenav();
     $('.carousel.carousel-slider').carousel({
